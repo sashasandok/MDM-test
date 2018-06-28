@@ -1,0 +1,27 @@
+.Blog {
+  min-height: 80vh;
+}
+
+.Head {
+  flex: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 0.3px solid lightgray;
+  box-shadow: 2px 2px 2px lightgray;
+  flex: 0 0 auto;
+}
+
+.Posts {
+  flex: 1 0 auto;
+}
+
+.BottomSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex: 0 0 auto;
+}

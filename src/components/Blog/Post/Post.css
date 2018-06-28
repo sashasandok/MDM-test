@@ -1,0 +1,21 @@
+.Post {
+  border: 0.3px solid lightgray;
+  box-shadow: 3px 3px 2px lightgray;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 400px;
+  min-height: 250px;
+}
+.Head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media (min-width: 320px) {
+  .Post {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

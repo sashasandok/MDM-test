@@ -1,0 +1,20 @@
+.Head {
+  flex: 0;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: .3px solid lightgray;
+  box-shadow: 2px 2px 2px lightgray;
+}
+.Logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  height: 400px;
+}
+.Home {
+  min-height: 100%;
+}
