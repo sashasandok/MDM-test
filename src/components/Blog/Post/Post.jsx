@@ -16,7 +16,8 @@ class Post extends Component {
     const { posts } = this.props
     return posts.map(onePost => (
       <div className={classes.Post} key={onePost.id}>
-        <span>{Math.random().toFixed(3)}</span> | <span>{moment().format('LLLL')}</span>
+        <span>{onePost.date}</span>
+        {console.log(onePost.date)}
         <Divider />
         <span className={classes.Head}>
           <h3>{onePost.title}</h3>

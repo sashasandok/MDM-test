@@ -28,6 +28,7 @@ export const getPosts = () => async dispatch => {
     // console.log('result', result)
 
     const items = result.map(postMapper)
+    console.log(items)
 
     dispatch(
       actions.post.success({

@@ -15,10 +15,10 @@ const home = () => (
   <Layout>
     <div className={classes.Home}>
       <Header className={classes.Head}>
-        <h1>Welcome To My</h1>
+        <h1>Welcome To </h1>
         <Link to="/my-blog">
           <Button compact color="grey" size="small">
-            BLOG
+            MDM Test
           </Button>
         </Link>
       </Header>
