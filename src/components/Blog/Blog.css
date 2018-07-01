@@ -10,8 +10,14 @@
   align-items: center;
   justify-content: space-around;
   border: 0.3px solid lightgray;
+  border-radius: 5px;
   box-shadow: 2px 2px 2px lightgray;
   flex: 0 0 auto;
+}
+
+.Head > h1 {
+  margin-top: 15px;
+  font-family: inherit;
 }
 
 .Posts {
@@ -24,4 +30,24 @@
   justify-content: space-between;
   align-items: baseline;
   flex: 0 0 auto;
+}
+
+.Button {
+  background-color: white; 
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  padding: 3px 8px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px rgb(75, 75, 75);
+  cursor: pointer;
+}
+
+.Button:hover,
+.Button:active {
+  background-color: gray;
+  color: white;
+}
+
+.Button:focus {
+  outline: none
 }

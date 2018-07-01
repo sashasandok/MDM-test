@@ -6,6 +6,8 @@ export default item => {
     userId: item.userId,
     title: item.title,
     body: item.body,
-    date: momentRandom().toString()
+    date: momentRandom().format('l')
   }
 }
+
+// .format('YYYY/MM/DD')

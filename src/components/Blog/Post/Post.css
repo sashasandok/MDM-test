@@ -1,16 +1,36 @@
 .Post {
   border: 0.3px solid lightgray;
   box-shadow: 3px 3px 2px lightgray;
+  padding: 10px;
   margin-bottom: 15px;
   margin-right: 10px;
   margin-left: 10px;
   width: 400px;
   min-height: 250px;
+  font-family: inherit;
 }
+
+.Date {
+  text-align: center;
+}
+
 .Head {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.Head > h3 {
+  text-align: center;
+}
+
+.Body {
+  text-align: center;
+}
+
+.Divider {
+  border-top: 1px solid rgba(140, 139, 139, .4);
 }
 
 @media (min-width: 320px) {

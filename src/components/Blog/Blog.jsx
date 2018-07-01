@@ -6,9 +6,6 @@ import PropTypes from 'prop-types'
 // Redux
 import { connect } from 'react-redux'
 
-// semantic-ui
-import { Button, Header } from 'semantic-ui-react'
-
 // components
 import Layout from '../Layout/Layout'
 import Load from '../Loader/Loader'
@@ -50,17 +47,21 @@ class Blog extends Component {
           <NewPost />
         </Modal>
         <div className={classes.Blog}>
-          <Header className={classes.Head}>
+          <header className={classes.Head}>
             <h1>TEST for MDM</h1>
             <div>
               <Link to="/">
-                <Button compact color="grey" size="small">
+                <button className={classes.Button}>
                   went home
-                </Button>
+                </button>
               </Link>
-              <Button onClick={this.openModalHandler}>New Post</Button>
+              <button
+                onClick={this.openModalHandler}
+                className={classes.Button}>
+                New Post
+              </button>
             </div>
-          </Header>
+          </header>
           <div className={classes.Posts}>
             {isFetching ? (
               <Load />

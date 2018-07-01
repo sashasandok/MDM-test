@@ -1,3 +1,8 @@
+.Home {
+  min-height: 100%;
+  font-family: inherit;
+}
+
 .Head {
   flex: 0;
   height: 80px;
@@ -8,6 +13,7 @@
   border: .3px solid lightgray;
   box-shadow: 2px 2px 2px lightgray;
 }
+
 .Logo {
   display: flex;
   flex-direction: row;
@@ -15,6 +21,21 @@
   justify-content: center; 
   height: 400px;
 }
-.Home {
-  min-height: 100%;
+
+.Button {
+  background-color: white; 
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  padding: 3px 8px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px rgb(75, 75, 75);
+  cursor: pointer;
+}
+.Button:hover,
+.Button:active {
+  background-color: gray;
+  color: white;
+}
+.Button:focus {
+  outline: none
 }

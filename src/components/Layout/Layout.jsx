@@ -15,9 +15,9 @@ const Layout = ({ children }) => (
     <div className={classes.Main}>{children}</div>
     <div>
       <div>
-        <Divider />
+        <p className={classes.Divider}></p>
         <p className={classes.Footer}>
-          <Icon name="hand scissors" color="red" /> by Alex_Sandok
+          <img src='../../assets/happy.png' /> by Alex_Sandok
         </p>
       </div>
     </div>

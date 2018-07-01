@@ -2,9 +2,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// semantic components
-import { Image, Button, Header } from 'semantic-ui-react'
-
 // components
 import Layout from '../Layout/Layout'
 
@@ -14,16 +11,16 @@ import classes from './Home.css'
 const home = () => (
   <Layout>
     <div className={classes.Home}>
-      <Header className={classes.Head}>
+      <header className={classes.Head}>
         <h1>Welcome To </h1>
         <Link to="/my-blog">
-          <Button compact color="grey" size="small">
+          <button className={classes.Button}>
             MDM Test
-          </Button>
+          </button>
         </Link>
-      </Header>
+      </header>
       <div className={classes.Logo}>
-        <Image src="../../assets/logo.png" />
+        <img src="../../assets/logo.png" />
       </div>
     </div>
   </Layout>
