@@ -1,9 +1,6 @@
 // react
 import React from 'react'
 
-// semantic components
-import { Divider, Icon } from 'semantic-ui-react'
-
 // prop-types
 import PropTypes from 'prop-types'
 
@@ -17,7 +14,7 @@ const Layout = ({ children }) => (
       <div>
         <p className={classes.Divider}></p>
         <p className={classes.Footer}>
-          <img src='../../assets/happy.png' /> by Alex_Sandok
+          <img src='../../assets/happy.png' className={classes.Img} /> by Alex_Sandok
         </p>
       </div>
     </div>

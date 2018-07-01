@@ -1,12 +1,12 @@
 .Post {
+  background-color: rgba(208, 208, 208, 0.2);
   border: 0.3px solid lightgray;
-  box-shadow: 3px 3px 2px lightgray;
-  padding: 10px;
-  margin-bottom: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 400px;
-  min-height: 250px;
+  box-shadow: 5px 5px 8px rgba(211, 211, 211, 0.5);
+  padding: 25px;
+  margin-top: 20px;
+  margin-top: 20px;
+  width: 50vw;
+  min-height: 450px;
   font-family: inherit;
 }
 
@@ -26,16 +26,10 @@
 }
 
 .Body {
-  text-align: center;
+  text-align: left;
 }
 
 .Divider {
   border-top: 1px solid rgba(140, 139, 139, .4);
 }
 
-@media (min-width: 320px) {
-  .Post {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-}

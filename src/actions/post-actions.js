@@ -1,21 +1,21 @@
 // babel
 import 'babel-polyfill'
 
+// redux
 import { createActions } from 'redux-actions'
 
+// api
 import api from '../api/api-post'
-import postMapper from '../mappers/post'
 
-// utils
-// import _ from 'lodash';
+// mappers
+import postMapper from '../mappers/post'
 
 const actions = createActions({
   post: {
     request: x => x,
     success: x => x,
     error: x => x
-  },
-  deletePost: x => x
+  }
 })
 
 export default actions
@@ -25,11 +25,7 @@ export const getPosts = () => async dispatch => {
 
   try {
     const result = await api.getPosts()
-    // console.log('result', result)
-
     const items = result.map(postMapper)
-    console.log(items)
-
     dispatch(
       actions.post.success({
         items: items

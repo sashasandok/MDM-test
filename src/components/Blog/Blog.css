@@ -12,6 +12,7 @@
   border: 0.3px solid lightgray;
   border-radius: 5px;
   box-shadow: 2px 2px 2px lightgray;
+  background-color: rgba(230, 230, 230, 0.5);
   flex: 0 0 auto;
 }
 
