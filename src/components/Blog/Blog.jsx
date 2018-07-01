@@ -54,11 +54,13 @@ class Blog extends Component {
             )}
           </div>
         </div>
-        <button
-          className={classes.Button}
-          onClick={this.onLoadMorePosts}>
-          Load More Posts
-        </button>
+        <div className={classes.LoadMore}>
+          <button
+            className={classes.Button}
+            onClick={this.onLoadMorePosts}>
+            Load More Posts
+          </button>
+        </div>
       </Layout>
     )
   }
