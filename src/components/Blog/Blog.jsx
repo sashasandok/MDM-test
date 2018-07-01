@@ -18,10 +18,19 @@ import classes from './Blog.css'
 import Posts from './Posts/Posts'
 
 class Blog extends Component {
+  state = {
+    limit: 5
+  }
+
   componentWillMount () {
     this.props.getPosts()
   }
 
+  onLoadMorePosts = () => {
+    this.setState({
+      limit: this.state.limit + 5
+    })
+  }
   render () {
     const { isFetching } = this.props
     return (
@@ -41,10 +50,15 @@ class Blog extends Component {
             {isFetching ? (
               <Load />
             ) : (
-              <Posts posts={this.props.posts} />
+              <Posts posts={this.props.posts} limit={this.state.limit} />
             )}
           </div>
         </div>
+        <button
+          className={classes.Button}
+          onClick={this.onLoadMorePosts}>
+          Load More Posts
+        </button>
       </Layout>
     )
   }

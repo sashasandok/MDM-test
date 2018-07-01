@@ -6,16 +6,20 @@ import PropTypes from 'prop-types'
 import moment from 'moment'
 
 // lodash
-import _ from 'lodash'
+import { sortBy, slice, map } from 'lodash'
 
 // styles
 import classes from './Post.css'
 
 class Post extends Component {
   render () {
-    const { posts } = this.props
-    const sortPosts = _.sortBy(posts, (o) => { return moment(o.date) }).reverse()
-    return sortPosts.map(onePost => (
+    const { posts, limit } = this.props
+
+    const sortPosts = sortBy(posts, (o) => { return moment(o.date) }).reverse()
+
+    const limitPosts = slice(sortPosts, 0, limit)
+
+    return map(limitPosts, onePost => (
       <div className={classes.Post} key={onePost.id}>
         <p className={classes.Date}>Posted in: <span>{onePost.date}</span></p>
         <p className={classes.Divider}></p>
