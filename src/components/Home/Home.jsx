@@ -13,7 +13,7 @@ const home = () => (
     <div className={classes.Home}>
       <header className={classes.Head}>
         <h1>Welcome To </h1>
-        <Link to="/my-blog">
+        <Link to="/test">
           <button className={classes.Button}>
             MDM Test
           </button>

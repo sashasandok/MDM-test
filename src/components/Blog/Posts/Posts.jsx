@@ -10,7 +10,7 @@ import classes from './Posts.css'
 
 const posts = props => (
   <div className={classes.Posts}>
-    <Post posts={props.posts} limit={props.limit} />
+    <Post posts={props.posts} limit={props.limit} isFetching={props.isFetching} />
   </div>
 )
 

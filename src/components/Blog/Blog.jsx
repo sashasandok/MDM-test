@@ -22,7 +22,7 @@ class Blog extends Component {
     limit: 5
   }
 
-  componentWillMount () {
+  componentDidMount () {
     this.props.getPosts()
   }
 
@@ -50,7 +50,7 @@ class Blog extends Component {
             {isFetching ? (
               <Load />
             ) : (
-              <Posts posts={this.props.posts} limit={this.state.limit} />
+              <Posts posts={this.props.posts} limit={this.state.limit} isFetching={this.props.isFetching} />
             )}
           </div>
         </div>

@@ -6,7 +6,7 @@ import { Loader } from 'semantic-ui-react'
 
 const load = () => (
   <div>
-    <Loader active />
+    <Loader active color='red' />
   </div>
 )
 
