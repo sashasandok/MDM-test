@@ -14,9 +14,7 @@ const home = () => (
       <header className={classes.Head}>
         <h1>Welcome To </h1>
         <Link to="/test">
-          <button className={classes.Button}>
-            MDM Test
-          </button>
+          <button className={classes.Button}>Blog</button>
         </Link>
       </header>
       <div className={classes.Logo}>

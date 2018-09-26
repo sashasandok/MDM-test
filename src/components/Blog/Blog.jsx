@@ -37,12 +37,10 @@ class Blog extends Component {
       <Layout>
         <div className={classes.Blog}>
           <header className={classes.Head}>
-            <h1>Test for MDM</h1>
+            <h1>Alex's Blog</h1>
             <div>
               <Link to="/">
-                <button className={classes.Button}>
-                  Home
-                </button>
+                <button className={classes.Button}>Home</button>
               </Link>
             </div>
           </header>
@@ -50,14 +48,16 @@ class Blog extends Component {
             {isFetching ? (
               <Load />
             ) : (
-              <Posts posts={this.props.posts} limit={this.state.limit} isFetching={this.props.isFetching} />
+              <Posts
+                posts={this.props.posts}
+                limit={this.state.limit}
+                isFetching={this.props.isFetching}
+              />
             )}
           </div>
         </div>
         <div className={classes.LoadMore}>
-          <button
-            className={classes.Button}
-            onClick={this.onLoadMorePosts}>
+          <button className={classes.Button} onClick={this.onLoadMorePosts}>
             Load More Posts
           </button>
         </div>
@@ -81,4 +81,7 @@ Blog.propTypes = {
   isFetching: PropTypes.bool.isRequired
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Blog)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Blog)
